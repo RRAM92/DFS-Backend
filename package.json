@@ -1,5 +1,5 @@
 {
-    "name": "advproj",
+    "name": "Backend",
     "version": "1.0.0",
     "keywords": [
         "util",
@@ -10,17 +10,15 @@
     ],
     "author": "DWFan95",
     "contributors": [],
-    "description": "",
-    "main": "main.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node main.js"
-    },
-    "license": "ISC",
-    "type": "commonjs",
     "dependencies": {
-        "axios": "^1.13.6",
+        "@supabase/supabase-js": "^2.98.0",
+        "bcrypt": "^6.0.0",
+        "cors": "^2.8.6",
+        "dotenv": "^17.3.1",
         "express": "^5.2.1",
-        "jsonwebtoken": "^9.0.3"
+        "jsonwebtoken": "^9.0.3",
+        "node-fetch": "^3.3.2",
+        "nodemon": "^3.1.14",
+        "pg": "^8.19.0"
     }
 }
