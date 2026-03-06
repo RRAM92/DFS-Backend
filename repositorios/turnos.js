@@ -4,10 +4,10 @@ async function crear(nombreCliente, servicio) {
     const { data, error } = await supabase
         .from('turnos')
         .insert([{
-            nombreCliente,
+            nombrecliente: nombreCliente,
             servicio,
             status: 'PENDIENTE',
-            horaLlegada: new Date().toLocaleString('es-MX', { dateStyle: 'short', timeStyle: 'short' })
+            horallegada: new Date().toLocaleString('es-MX', { dateStyle: 'short', timeStyle: 'short' })
         }])
         .select()
         .single();
