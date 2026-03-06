@@ -9,6 +9,7 @@ async function crearTurno(req, res) {
         const turno = await crear(nombreCliente, servicio);
         return res.status(201).json(turno);
     } catch (error) {
+        console.error("ERROR CREAR TURNO:", error.message);
         return res.status(500).json({ error: "Error al crear turno" });
     }
 }
