@@ -6,7 +6,7 @@ function authMiddleware(req, res, next){
     const token = header.split(" ")[1];
     
     try{
-        const decoded = veridicar(token);
+        const decoded = verificar(token);
         req.user = decoded;
         next();
     }catch(err) {return res.status(401).json({error: "INVÁLIDO"});}
